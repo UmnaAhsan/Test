@@ -53,20 +53,31 @@ Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => login
                       ),
                           SizedBox(height: 100,),
                           
+                          // Center(
+                          //   child: ElevatedButton(style: ElevatedButton.styleFrom(primary: Colors.green),
+                          //                      child: Text("MASUK"),
+                          //            onPressed: (){
+                          //                       Navigator.push(context, MaterialPageRoute(builder: (context) => login(),));
+                          //            },
+                          //            ),
+                          // ),
                           Center(
-                            child: ElevatedButton(style: ElevatedButton.styleFrom(primary: Colors.green),
-                                               child: Text("MASUK"),
-                                     onPressed: (){
-                                                Navigator.push(context, MaterialPageRoute(builder: (context) => login(),));
-                                     },
-                                     ),
-                          ),
+               child:GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> login()));
+                },
+                child: Container(height: 30,width: 300,
+                decoration: BoxDecoration(color: Colors.green,
+                  borderRadius: BorderRadius.circular(20)),
+                child: Center(child: Text("Mask")),),
+               )
+             )
                                   
                    
                    ],),
                  )
         ]),
-        )
+        ),
       );
     
   }

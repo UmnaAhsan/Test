@@ -7,7 +7,7 @@ class cont1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold( appBar: AppBar(leading: ElevatedButton(onPressed: (){
       Navigator.pop(context);
-    }, child: Icon(Icons.arrow_back))),
+    }, child: Icon(Icons.arrow_back)),),
       body: SingleChildScrollView(scrollDirection: Axis.vertical,
         child: Column(children: [
           Container(
@@ -59,35 +59,60 @@ class cont1 extends StatelessWidget {
          SingleChildScrollView(scrollDirection: Axis.horizontal,
            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-            Container(height: 200,width: 200,
-            decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant3.jpeg"))),
-            //child: Text("Daisy Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
-            ), Text("Daisy Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+            Column(
+              children: [
+                Container(height: 200,width: 200,
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant3.jpeg"))),
+                //child: Text("Daisy Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                ),Text("Daisy Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+              ],
+            ),
+            // Text("Daisy Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
             SizedBox(width: 8,),
-            Container(height: 200,width: 200,
-            decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant02.jpg"))),
-           // child: Text("Fern Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),), 
-            ),Text("Fern Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+            Column(
+              children: [
+                Container(height: 200,width: 200,
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant02.jpg"))),
+                           // child: Text("Fern Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),), 
+                ),Text("Fern Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+              ],
+            ),
              SizedBox(width: 8,),
-             Container(height: 200,width: 200,
-             decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant5.jpeg"))),
-             //child: Text("Cattail Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),), 
-             ),Text("Cattail Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+             Column(
+               children: [
+                 Container(height: 200,width: 200,
+                 decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant5.jpeg"))),
+                 //child: Text("Cattail Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),), 
+                 ),Text("Cattail Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+               ],
+             ),
               SizedBox(width: 8,),
-            Container(height: 200,width: 200,
-            decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant1.jpg"))),
-            //child: Text("Allium Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
-             ), Text("Allium Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+            Column(
+              children: [
+                Container(height: 200,width: 200,
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant1.jpg"))),
+                //child: Text("Allium Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                 ),Text("Allium Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+              ],
+            ), 
              SizedBox(width: 8,),
-             Container(height: 200,width: 200,
-             decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant6.jpeg"))),
-            // child:Text("Cactus Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),), 
-             ),Text("Cactus Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+             Column(
+               children: [
+                 Container(height: 200,width: 200,
+                 decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant6.jpeg"))),
+                             // child:Text("Cactus Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),), 
+                 ),Text("Cactus Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+               ],
+             ),
               SizedBox(width: 8,),
-            Container(height: 200,width: 200,
-            decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant4.jpeg"))),
-           // child: Text("Bamboo Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
-            ),Text("Bamboo Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),)
+            Column(
+              children: [
+                Container(height: 200,width: 200,
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage("plant4.jpeg"))),
+                           // child: Text("Bamboo Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                ),Text("Bamboo Plant",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),)
+              ],
+            ),
            ],),
          )
         ],),

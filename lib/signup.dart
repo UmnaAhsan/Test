@@ -70,14 +70,25 @@ class _signup1State extends State<signup1> {
           SizedBox(height: 10,),
           SizedBox(height: 40,),
           
-          Center(child: ElevatedButton(style: ElevatedButton.styleFrom(primary: Colors.green),
-            onPressed:
-            //signupPage,
-          (){
-            //pagelogin,
-           Navigator.push(context, MaterialPageRoute(builder: (context) => bnb(),));
-           },
-             child: Text("login")))
+          // Center(child: ElevatedButton(style: ElevatedButton.styleFrom(primary: Colors.green),
+          //   onPressed:
+          //   //signupPage,
+          // (){
+          //   //pagelogin,
+          //  Navigator.push(context, MaterialPageRoute(builder: (context) => bnb(),));
+          //  },
+          //    child: Text("login")))
+          Center(
+               child:GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> home()));
+                },
+                child: Container(height: 30,width: 300,
+                decoration: BoxDecoration(color: Colors.green,
+                  borderRadius: BorderRadius.circular(20)),
+                child: Center(child: Text("login")),),
+               )
+             )
         ],)
           
         );
